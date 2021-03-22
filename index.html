@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/framework.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Digital Ocean</title>
@@ -15,18 +18,55 @@
 <body>
     <!-- header -->
     <header>
-        <!-- nav -->
+
         <nav id="nav">
-            <div class="container ac-container">
+            <div class="container">
                 <div class="row">
-                    <div class="left col-xs-10 col-md-3 col-lg-3">
-                        <span class="">DigitalOcean</span>
+                    <!-- left -->
+                    <div class="left col-xs-8 col-md-3 col-lg-3">
+                        <img src="assets/img/logo.png" alt="logo">
                     </div>
 
-                    <div class="right col-xs-2 col-md-9 col-lg-9 text-right">
-                        <span class="hidden-xs">menu</span>
-                        <span class="visible-xs">button</span>
+                    <!-- center -->
+                    <div class="center col-xs-2 col-md-5 col-lg-5">
+                        <span class="hidden-xs hidden-sm text-left">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">Products
+                                      <i class="fas fa-angle-down"></i> 
+                                    </a>
+                                </li>
+                                <li><a href="#">Customers</a></li>
+                                <li>
+                                    <a href="#">Community
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </span>
                     </div>
+
+                    <!-- right -->
+                    <div class="right col-xs-2 col-md-4 col-lg-4 text-right">
+                        <span class="hidden-xs hidden-sm">
+                            <ul class="list-inline">
+                                <li><a href="#">Docs</a></li>
+                                <li>
+                                    <a href="#">Support
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                </li>
+                                <li><a href="#">Login</a></li>
+                                <li><a class="button" href="#">Sing Up</a></li>
+                            </ul>    
+                        </span>
+
+                        <span class="visible-xs visible-sm">
+                            <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                        </span>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -39,13 +79,17 @@
         <section id="first-section">
             <div class="container ac-container">
                 <div class="row">
-                    <div class="left col-xs-12 col-md-6 col-lg-6">
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, corrupti porro deleniti enim ipsa ullam soluta repellat eaque vero nihil, eligendi quia ratione explicabo obcaecati ea minus et aliquam dignissimos corporis optio. Consequuntur, placeat consequatur praesentium nostrum id officia similique provident aperiam inventore numquam pariatur repellendus temporibus iusto quam eius dolorum beatae non recusandae. Laborum nihil aliquid dolorem facere eum dolore fuga iusto totam, dicta consectetur quis doloremque maiores, deleniti ducimus sequi saepe, sit excepturi rem enim pariatur animi! Deleniti vel rerum dicta molestias amet. Deleniti quasi aliquam nobis ut! Possimus deserunt eveniet excepturi quis eos sit ad sapiente repellat!
-                        </span>
+                    <div class="left col-xs-12 col-md-6 col-lg-6 padding-top">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, corrupti porro deleniti enim ipsa ullam soluta repellat eaque vero nihil, eligendi quia ratione explicabo obcaecati ea minus et aliquam dignissimos corporis optio. Consequuntur, placeat consequatur
+                        praesentium nostrum id officia similique provident aperiam inventore numquam pariatur repellendus temporibus iusto quam eius dolorum beatae non recusandae. Laborum nihil aliquid dolorem facere eum dolore fuga iusto totam, dicta
+                        consectetur quis doloremque maiores, deleniti ducimus sequi saepe, sit excepturi rem enim pariatur animi! Deleniti vel rerum dicta molestias amet. Deleniti quasi aliquam nobis ut! Possimus deserunt eveniet excepturi quis eos sit
+                        ad sapiente repellat!
                     </div>
 
-                    <div class="right col-xs-12 col-md-6 col-lg-6"></div>
+                    <div class="right col-xs-12 col-md-6 col-lg-6 padding-top">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sit aliquid. Exercitationem modi deserunt, magni sequi beatae sunt eaque cumque ipsum consequuntur dignissimos maiores ad suscipit veniam quisquam eos? Ad quibusdam, deleniti in facere
+                        labore fugiat repellendus reiciendis iure accusantium quas rerum. Recusandae alias sapiente doloremque repudiandae aperiam. Harum, incidunt!
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,13 +98,15 @@
         <section id="second-section">
             <div class="container ac-container">
                 <div class="row text-center">
-                    <div>text</div>
+                    <div class="padding-top padding-bottom">text</div>
+
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
                     <div class="image col-xs-6 col-md-2 col-lg-2"></div>
+
                     <div>link</div>
                 </div>
             </div>
@@ -70,8 +116,19 @@
         <section id="third-section">
             <div class="container ac-container">
                 <div class="row">
-                    <div class="">
+                    <div class="text-center">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ratione dicta voluptatum exercitationem velit veritatis, neque fugiat tempora, sequi pariatur quae repellat assumenda! Deleniti architecto dicta quam inventore, doloremque, sequi magni,
+                        sed tempora illum distinctio aspernatur vel adipisci! Cupiditate vel unde qui consequuntur sed nihil dolorum in numquam quo recusandae.
+                    </div>
+                    <div class="left col-xs-12 col-md-4 col-lg-4">
+                        <div class="box"></div>
+                    </div>
 
+                    <div class="right col-xs-12 col-md-8 col-lg-8">
+                        <div class="box col-xs-12 col-md-6 col-lg-6">1</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-6">2</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-6">3</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-6">4</div>
                     </div>
                 </div>
             </div>
@@ -79,22 +136,55 @@
 
         <!-- fourth section -->
         <section id="fourth-section">
-
+            <div class="container ac-container">
+                <div class="row ac-row text-center">
+                    <div class="title">title</div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, inventore.
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
         </section>
 
         <!-- fifth section -->
         <section id="fifth-section">
-
+            <div class="container ac-container">
+                <div class="row text-center">
+                    <div class="title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, non?
+                    </div>
+                    <div class="box col-xs-12 col-md-4 col-lg-4"></div>
+                    <div class="box col-xs-12 col-md-4 col-lg-4"></div>
+                    <div class="box col-xs-12 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
         </section>
 
         <!-- sixth section -->
         <section id="sixth-section">
-
+            <div class="container ac-container">
+                <div class="row text-center">
+                    <div class="title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, non?
+                    </div>
+                    <div class="box col-xs-12 col-md-12 col-lg-6"></div>
+                    <div class="box col-xs-12 col-md-12 col-lg-6"></div>
+                </div>
+            </div>
         </section>
 
         <!-- seventh section -->
         <section id="seventh-section">
-
+            <div class="container ac-container">
+                <div class="row ac-row text-center">
+                    <div class="title">title</div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, inventore.
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- main -->
@@ -103,12 +193,30 @@
     <footer>
         <!-- footer top -->
         <section id="footer-top">
-
+            <div class="container ac-container">
+                <div class="row text-center">
+                    <div class="text">text</div>
+                    <div class="buuton">button</div>
+                </div>
+            </div>
         </section>
 
         <!-- footer bottom -->
         <section id="footer-bottom">
+            <div class="container ac-container">
+                <div class="row">
+                    <div class="left col-xs-12 col-md-4 col-lg-4">
+                        <div class="box"></div>
+                    </div>
 
+                    <div class="right col-xs-12 col-md-8 col-lg-8">
+                        <div class="box col-xs-12 col-md-6 col-lg-3">1</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-3">2</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-3">3</div>
+                        <div class="box col-xs-12 col-md-6 col-lg-3">4</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </footer>
