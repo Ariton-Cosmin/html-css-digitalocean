@@ -85,6 +85,9 @@ body {
     font-size: 20px;
 }
 
+
+/* right */
+
 #first-section .right {
     height: 500px;
     margin: auto;
@@ -126,9 +129,10 @@ body {
     color: black;
 }
 
-.account img {
-    width: 20px;
-    text-align: left;
+.right .account ul .button-white .google {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/google-icon.png);
 }
 
 
@@ -146,14 +150,6 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     color: rgb(111, 123, 151);
-}
-
-#second-section .image {
-    height: 80px;
-}
-
-#second-section .image img {
-    max-height: 100%;
 }
 
 
@@ -289,7 +285,7 @@ body {
 /* media querry */
 
 @media screen and (max-width: 767px) {
-    /* main */
+    /* first section */
     #first-section {
         height: 700px;
     }
@@ -309,22 +305,24 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    /* main */
+    /* first section */
     #first-section .left h1 {
         font-size: 40px;
     }
+    /* second section */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1169px) {
-    /* main */
+    /* first section */
     #first-section .left h1 {
         font-size: 50px;
     }
 }
 
 @media screen and (min-width: 1170px) {
-    /* main */
+    /* first section */
     #first-section .left h1 {
         font-size: 58px;
     }
+    /* second section */
 }
