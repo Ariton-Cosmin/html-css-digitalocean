@@ -7,8 +7,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
 .padding-top {
     padding-top: 80px;
+}
+
+.padding-bottom-50 {
+    padding-bottom: 50px;
 }
 
 .list-inline {
@@ -31,6 +41,18 @@ body {
     color: rgb(0, 165, 255);
 }
 
+.font-w-5 {
+    font-weight: 500;
+}
+
+.font-w-7 {
+    font-weight: 700;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
 
 /* header */
 
@@ -45,7 +67,6 @@ body {
 }
 
 .list-inline a {
-    font-weight: 500;
     color: black;
     text-decoration: none;
 }
@@ -65,20 +86,18 @@ body {
 
 #first-section {
     width: 100%;
-    height: 500px;
     background-color: blue;
     background-image: url(../img/bg-banner-home.jpg);
     background-size: cover;
 }
 
 #first-section .left {
-    height: 500px;
+    height: 450px;
     color: white;
 }
 
 #first-section .left h1 {
     font-size: 58px;
-    font-weight: 700;
 }
 
 #first-section .left p {
@@ -89,13 +108,12 @@ body {
 /* right */
 
 #first-section .right {
-    height: 500px;
+    height: 450px;
     margin: auto;
 }
 
 #first-section .right .account {
-    height: 330px;
-    padding: 20px 15px;
+    padding: 20px 10px 15px;
     border-radius: 5px;
     background-color: white;
 }
@@ -103,6 +121,7 @@ body {
 #first-section .right .account p {
     font-size: 30px;
     font-weight: 500;
+    padding: 0 10px 1px 10px;
 }
 
 .right .account ul li {
@@ -124,15 +143,30 @@ body {
     text-decoration: none;
 }
 
-.right .account .button-white a {
+.right .account .button-white {
+    position: relative;
     text-decoration: none;
     color: black;
 }
 
-.right .account ul .button-white .google {
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/google-icon.png);
+.right .account .button-white .google img {
+    position: absolute;
+    width: 20px;
+    left: 10px;
+}
+
+.right .account .button-white .google {
+    text-decoration: none;
+    color: gray;
+}
+
+.right .account .text {
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+.right .account .text a {
+    text-decoration: underline;
 }
 
 
@@ -140,15 +174,14 @@ body {
 
 #second-section {
     width: 100%;
-    height: 200px;
     text-align: center;
+    padding-bottom: 15px;
     background-color: rgb(243, 245, 249);
 }
 
 #second-section .text-top {
     padding: 30px 0;
     text-transform: uppercase;
-    font-weight: 500;
     color: rgb(111, 123, 151);
 }
 
@@ -157,27 +190,41 @@ body {
 
 #third-section {
     width: 100%;
-    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: rgb(92, 106, 136);
 }
 
 #third-section .text h2 {
+    font-size: 35px;
     color: black;
-    font-weight: 700;
 }
 
 #third-section .text p {
     font-size: 22px;
 }
 
-#third-section .left .box {
-    background-color: blue;
+#third-section .left .box ul li {
+    font-size: 22px;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 8px;
+    border-left: 1px solid gray;
 }
 
 #third-section .box {
-    height: 100px;
-    border: 1px solid white;
-    background-color: red;
+    height: 200px;
+    padding-right: 100px;
+}
+
+#third-section .box img {
+    width: 50px;
+    padding-bottom: 5px;
+}
+
+#third-section .right .box h4 {
+    font-weight: 500;
+    color: black;
 }
 
 
@@ -287,7 +334,7 @@ body {
 @media screen and (max-width: 767px) {
     /* first section */
     #first-section {
-        height: 700px;
+        height: 710px;
     }
     #first-section .left {
         padding-top: 50px;
@@ -302,6 +349,10 @@ body {
     #first-section .left p {
         font-size: 19px;
     }
+    /* second section */
+    #second-section .list-inline li {
+        width: calc(100% / 3);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -310,12 +361,19 @@ body {
         font-size: 40px;
     }
     /* second section */
+    #second-section .list-inline li {
+        width: calc(100% / 7);
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1169px) {
     /* first section */
     #first-section .left h1 {
         font-size: 50px;
+    }
+    /* second section */
+    #second-section .list-inline li {
+        width: calc(100% / 7);
     }
 }
 
@@ -325,4 +383,7 @@ body {
         font-size: 58px;
     }
     /* second section */
+    #second-section .list-inline li {
+        width: calc(100% / 7);
+    }
 }
